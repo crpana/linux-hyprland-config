@@ -1,0 +1,33 @@
+close_when_open = true
+theme = "tokyo-night"
+theme_location = ["~/.config/walker/themes/"]
+hotreload_theme = true
+force_keyboard_focus = true
+
+[list]
+max_entries = 200
+
+[search]
+placeholder = " Search..."
+
+[builtins.applications]
+launch_prefix = ""
+placeholder = " Search..."
+prioritize_new = false
+context_aware = false
+show_sub_when_single = false
+history = false
+icon = ""
+
+[builtins.calc]
+name = "Calculator"
+min_chars = 3
+prefix = "="
+
+[builtins.finder]
+use_fd = true
+cmd_alt = "xdg-open $(dirname ~/%RESULT%)"
+icon = "file"
+name = "Finder"
+preview_images = true
+prefix = "."
